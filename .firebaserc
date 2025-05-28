@@ -1,5 +1,10 @@
 {
   "projects": {
-    "default": "assignment-10-5e5b1"
-  }
+    "default": "assignment-10-5e5b1",
+    "wooden-spice-manikganj-bautha-umai-bd": "assignment-10-5e5b1",
+    "firebase projects:list": "assignment-10-5e5b1",
+    "woodenspice": "woodenspice-mnkgnj-beutha-umai"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -36,6 +36,15 @@ const MovingImageRight = () => {
             className="h-10 md:h-14 lg:h-18 xl:h-24 w-auto inline-block "
           />
         ))}
+        {/* দ্বিতীয়বার লুপ যেন ইনফিনিট চলে */}
+        {jobs.map((item, index) => (
+          <img
+            key={`second-${index}`}
+            src={item.image_url}
+            alt={`scroll-img-duplicate-${index}`}
+            className="h-10 md:h-14 lg:h-18 xl:h-24 w-auto inline-block "
+          />
+        ))}
       </div>
     </div>
   );
