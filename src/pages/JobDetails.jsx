@@ -89,7 +89,7 @@ const JobDetails = () => {
             <p><span className='font-semibold'>Origin:</span> {origin}</p>
             <p><span className='font-semibold'>Quantity:</span> {quantity}</p>
             <p><span className='font-semibold'>Price:</span> ${price}</p>
-            <p><span className='font-semibold'>Range:</span> ${min_price} - ${max_price}</p>
+            {/* <p><span className='font-semibold'>Range:</span> ${min_price} - ${max_price}</p> */}
           </div>
 
           <div className='mt-6'>

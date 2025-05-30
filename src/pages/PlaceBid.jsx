@@ -24,7 +24,7 @@ const PlaceBid = () => {
     return <p>No job found. Please go back and try again.</p>
   }
 
-  const { _id, price, category, buyer } = job
+  const { _id, price, category, buyer,job_title } = job
 
   const handleFormSubmission = async e => {
     e.preventDefault()
@@ -38,7 +38,8 @@ const PlaceBid = () => {
     const comment = form.comment.value
     const category = form.category.value
     const email = user?.email
-    const status = 'Pending'
+    const job_title = form.job_title.value
+    const status = "Pending"
 
     const bidData = {
       jobId: _id,
@@ -46,6 +47,7 @@ const PlaceBid = () => {
       comment,
       category,
       email,
+      job_title,
       buyer_email: buyer?.email,
       status,
       buyer,
@@ -77,7 +79,22 @@ const PlaceBid = () => {
                 id='price'
                 type='text'
                 name='price'
-               defaultValue={price ||'sdfghjk'}
+               defaultValue={price}
+                required
+                className='block w-full px-4 py-2 mt-2   border border-gray-200 rounded-md   focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+              />
+            </div>
+
+
+            <div>
+              <label className=' ' htmlFor='job_title'>
+                title
+              </label>
+              <input
+                id='job_title'
+                type='text'
+                name='job_title'
+               defaultValue={job_title}
                 required
                 className='block w-full px-4 py-2 mt-2   border border-gray-200 rounded-md   focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
               />

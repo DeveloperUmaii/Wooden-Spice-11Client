@@ -86,7 +86,7 @@ const MyBids = () => {
                 <tbody className='bg-white divide-y divide-gray-200 '>
                   {bids.map(bid => (
                     <tr key={bid._id}>
-                      <td className='px-4 py-4 text-sm text-gray-500  whitespace-nowrap'>
+                      <td className='px-4 py-4 text-sm text-red-500  whitespace-nowrap'>
                         {bid.job_title}
                       </td>
                       <td className='px-4 py-4 text-sm text-gray-500  whitespace-nowrap'>
@@ -143,7 +143,7 @@ const MyBids = () => {
                         <button
                           disabled={bid.status !== 'In Progress'}
                           onClick={() => handleStatus(bid._id, 'Complete')}
-                          title='Mark Complete'
+                          title='Delete order'
                           className='text-gray-500 transition-colors duration-200   hover:text-red-500 focus:outline-none disabled:cursor-not-allowed'
                         >
                           <svg
